@@ -1,83 +1,108 @@
-// const student = {
-//     fullName: "Nayan Tupe",
-//     age: 21,
-//     cgpa: 8.2,
-//     iPass: true,
-// };
+/**  Conditions Statements  (if) Statement **/
 
-// console.log(student)
+// let age = 25;
 
-// const product = {
-//     title: "Ball Pen",
-//     rating: 4,
-//     offer: 5,
-//     price: 270,
-// };
-// console.log(product);
-
-
-// const profile = {
-//     username: "nayantupee",
-//     isFollow: false,
-//     followers: 123,
-//     following: 52,
+// if (age >= 18) {
+//     console.log("You Can Vote");
 // }
 
 
-// console.log(typeof profile["username"]);  // console.log use for print output in website & this code using for personaly see obejct key type 
-
-// Artimatic Opertors
-// let a = 5;                         // ( = )  is the assignment opertor
-// let b = 7;
-// console.log("a + b =", a + b)
-// console.log("a - b =", a - b)
-// console.log("a * b =", a * b)
-// console.log("a / b =", a / b)   // Basic Artimatic opertors in js. opertors Symbols -> (+, -, /, *) 
+// let age = 16;
+// if (age < 18) {
+//     console.log("You CANNOT Vote");
+// }
 
 
-// console.log("a % b =", a % b)   // modulus opertors
+// let mode = "dark";
+// let color;
 
+// if(mode === "dark") {
+//     color = "black";
 
-// console.log("a ** b =", a ** b)    // Exponentition opertors 
+// }
 
-// /**  unary opertors **/
+// if(mode === "light") {
+//     color = "white";
+    
+// }
 
-// console.log(" a-- =", a--)    // first value change then work
-// console.log(" a++ =", a++)    // first work then value after line change
-// console.log(" --a =", --a)     
-// console.log(" ++a =", ++a)    // first value change then print 
+// console.log(color);
 
-/**  Assignment Opertors & Symbols ( = , += , -= , *= , %= , **=) **/
+/** if-else Statement **/
 
+let mode = "blue";
+let color;
 
-// a += 4;  // a = a + 4
-// console.log( "a =   ", a)   // Value Change Perment 
+if(mode === "dark") {
+    color = "black";
 
-// /**  Comparison Opertors **/
+} else {
+    color = "white";              //else not write without if (if important for else)
+}
+    
+/** First Condition if-else Statement **/
 
-// console.log(" a == b", a == b)  // Equal to
-// console.log(" a != b", a != b)  // Not equal to 
-// console.log(" a === b", a === b) // Equal to & type   Strictily chack value data type then answer
-// console.log(" a > b", a > b)    // or ready (54) line me  change a value upper code that's why This is true in ouput 
-// console.log(" a < b", a < b)   
-// console.log(" a =", a )  
+// console.log(color);
+// let age = 18;
 
-/** Logical Opertors **/
+// if(age >= 18){
+//    console.log("Adult");
+// }else{
+//    console.log("Not Adult");     //condition → age >= 18 → true  &   so "Adult" prints
+// } 
 
-let a = 6;
-let b = 5;
+/** Secound Condition if-else Statement **/
 
-// let cond1 = a > b;   // true
-// let cond2 = a === 6; // true
-// console.log("cond1 && cond2", cond1 && cond2)     // (Logical AND want both condition true important then answer True)
+let age = 15;
 
+if(age >= 18){
+   console.log("Adult");
+}else{
+   console.log("Not Adult");  /** if true → else will NOT run    &   if false → else will run */
+}   
 
-// Logical OR    only one condition important for OR opertor one codition True answer is true 
+// odd or even   (odd = 1,3,5,...) & (even = 2,4,6,...)
 
-// only one condition false answer      when both condition are false 
-let cond1 = a < b;   // false
-let cond2 = a === 6; // true
-console.log("cond1 || cond2", cond1 || cond2)   
+let num = 10;
 
+if(num % 2 === 0) {
+    console.log("even");
+} else {
+    console.log("odd")
+}
+// alert("hello")    //  popup genrate
 
+// let name = prompt("hello")  // popup genratebut temparory user can write input in popup
+// console.log(name) 
 
+/** Practice Q1 **/
+
+// let num1 = prompt("enter A number:");
+
+// if(num1 % 5 === 0) {
+//     console.log(num1, "is multiple of 5")
+// } else {
+//     console.log(num1, "is NOT a multiple of 5")
+// }
+
+/** Practice Q2 **/
+
+// let score = 75;  // This is only code 1 time use 
+
+let score = prompt("Enter your score (0-100):")
+let grade;
+
+if (score >= 90 && score <= 100) {
+    grade = "A"
+}else if (score >= 70 && score <= 89) {
+    grade = "B"
+}else if (score >= 60 && score <= 69) {
+    grade = "C"
+}
+else if (score >= 50 && score <= 59) {
+    grade = "D"
+}else if (score >= 0 && score <= 49) {
+    grade = "E"
+}
+
+console.log("according to your scores, your grade was : ", grade)
