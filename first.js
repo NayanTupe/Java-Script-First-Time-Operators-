@@ -42,6 +42,25 @@
 
 // str.toUpperCase()
 
-let str = "NayanTupe"   //let A keyword in JavaScript Used to declare (create) a variable
-let newStr = str.toUpperCase(); //  newStr create beacause of orginal string variable not change (immatable)That's why new varibable create let newStr Creating another variable called newStr
-console.log(newStr);
+// let str = "NayanTupe"   //let A keyword in JavaScript Used to declare (create) a variable
+// let newStr = str.toUpperCase(); //  newStr create beacause of orginal string variable not change (immatable)That's why new varibable create let newStr Creating another variable called newStr
+// console.log(newStr);
+
+let str = "     Nayan  Tupe    21    "
+console.log(str.trim());    // Remove all space starting and last using .trim()
+
+let x = "0123456789";
+console.log(x.slice(2, 5));    // string part return using .slice()
+
+
+let str1 = "Nayan"
+let str2 = "Tupe"
+let res = str1.concat(str2);    //concat use for 2 other variable string mix like output :- NayanTupe 
+console.log(res);
+
+
+let fullName = prompt("enter your fullname without space");
+
+let username = "@" + fullName + fullName.length;
+
+console.log(username);
