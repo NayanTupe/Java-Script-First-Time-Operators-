@@ -8,3 +8,5 @@ h.forEach(function (e) {
 
   console.log(e);
 });
+
+// .querySelector is best access element any
